@@ -16,9 +16,9 @@ export default function SumNumbers() {
     let sum = 0;
     numbers.map((item) => {
       sum += item;
+      return sum;
     });
     setTotalAmount(sum);
-    return sum;
   };
 
   return (
