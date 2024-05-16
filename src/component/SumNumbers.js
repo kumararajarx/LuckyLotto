@@ -18,6 +18,7 @@ export default function SumNumbers() {
       sum += item;
     });
     setTotalAmount(sum);
+    return sum;
   };
 
   return (
@@ -27,18 +28,16 @@ export default function SumNumbers() {
         style={{ height: "200px" }}
       >
         <div className="px-5 pb-5">
-          <a href="#">
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              <div className="flex justify-center">
-                <input
-                  className="focus:bg-white items-center hover:bg-snowwhite focus:border-white hover:border-snowwhite"
-                  style={{ marginTop: "4rem", color: "black" }}
-                  onChange={handleChangeWinningAmount}
-                  value={getWinningNumber}
-                />
-              </div>
-            </h5>
-          </a>
+          <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            <div className="flex justify-center">
+              <input
+                className="focus:bg-white items-center hover:bg-snowwhite focus:border-white hover:border-snowwhite"
+                style={{ marginTop: "4rem", color: "black" }}
+                onChange={handleChangeWinningAmount}
+                value={getWinningNumber}
+              />
+            </div>
+          </h5>
           <div className="flex items-center mt-2.5 mb-5">
             <div className="flex items-center space-x-1 rtl:space-x-reverse">
               <button
