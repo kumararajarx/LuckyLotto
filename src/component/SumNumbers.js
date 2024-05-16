@@ -9,7 +9,7 @@ export default function SumNumbers() {
   };
 
   /**
-   * Hanle winning amount
+   * Hanle winning amount - I wonn
    */
   const handleWinningAmount = () => {
     const numbers = getWinningNumber.split("").map(Number);
