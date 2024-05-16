@@ -8,6 +8,9 @@ export default function SumNumbers() {
     setWinningNumber(event.target.value);
   };
 
+  /**
+   * Hanle winning amount
+   */
   const handleWinningAmount = () => {
     const numbers = getWinningNumber.split("").map(Number);
     let sum = 0;
